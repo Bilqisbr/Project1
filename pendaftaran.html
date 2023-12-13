@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran - Pondok Pesantren</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        .containernav{
+            margin-left: 5rem;
+        }
+        .nav a{
+			margin: 1em;
+			color: black;
+			font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+		}
+
+		.nav img{
+			width: 100px;
+			
+		}
+		.logo2{
+			margin: 1em;
+			
+		}
+        .form{
+            margin-left: 9rem;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+
+        }
+        .gambar{
+            margin-left: 7rem;
+            width: 75%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+
+        .gambar img{
+            width: 150px;
+            
+        }
+
+    </style>
+</head>
+<body>
+<div class="containernav">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav">
+					<div class="logo1">
+						<img  src="image/logopesantern-removebg-preview.png" alt="">
+					</div>
+					<div class="logo2">
+						<img src="image/logo3-removebg-preview.png" alt="">
+					</div>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://khaskempek.com/category/profil">Profile</a>
+					</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pendaftaran.html">Pendaftaran</a>
+					</li>
+					<li class="nav-item">
+                        <a class="nav-link" href="alamat.html">Kontak & Alamat</a>
+					</li>
+					<form class="form-inline">
+						<input class="form-control mr-sm-2" type="text" /> 
+						<button class="btn btn-primary my-2 my-sm-0" type="submit">
+							Search
+						</button>
+					</form>
+                </ul>
+            </div>
+        </div>
+</div>
+<form>
+    <fieldset class="form" >
+    <div class="form-group row">
+      <label for="text" class="col-3 col-form-label">Nama Calon Santri/Santriwati</label> 
+      <div class="col-5">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <i class="fa fa-address-card"></i>
+            </div>
+          </div> 
+          <input id="text" name="text" type="text" class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+        <label for="gambar" class="col-3 col-form-label">Foto Calon Santri/Santriwati</label>
+        <div class="col-5">
+            <input type="file" id="gambar" name="gambar" accept="image/*">
+        </div>
+    </div>
+    <div class="form-group row">
+      <label for="text5" class="col-3 col-form-label">NIK</label> 
+      <div class="col-5">
+        <input id="text5" name="text5" type="number" class="form-control">
+      </div>
+    </div>
+    <div class="form-group row">
+        <label for="text" class="col-3 col-form-label">Tempat Lahir</label> 
+        <div class="col-5">
+          <input id="text" name="text" type="text" class="form-control">
+        </div>
+      </div> 
+    <div class="form-group row">
+      <label for="date" class="col-3 col-form-label">Tanggal Lahir</label> 
+      <div class="col-5">
+        <input id="date" name="date" type="date" class="form-control">
+      </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-3">Jenis Kelamin</label> 
+        <div class="col-5">
+          <div class="custom-control custom-radio custom-control-inline">
+            <input name="radio" id="radio_0" type="radio" class="custom-control-input" value="Gender"> 
+            <label for="radio_0" class="custom-control-label">Laki-Laki</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input name="radio" id="radio_1" type="radio" class="custom-control-input" value="Gender"> 
+            <label for="radio_1" class="custom-control-label">Perempuan</label>
+          </div>
+        </div>
+      </div> 
+    <div class="form-group row">
+      <label for="text9" class="col-3 col-form-label">No. HP/WA</label> 
+      <div class="col-5">
+        <input id="text9" name="text9" type="number" class="form-control">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="textarea" class="col-3 col-form-label">Alamat Lengkap</label> 
+      <div class="col-5">
+        <textarea id="textarea" name="textarea" cols="40" rows="5" class="form-control"></textarea>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="text2" class="col-3 col-form-label">Nama Ayah Kandung</label> 
+      <div class="col-5">
+        <input id="text2" name="text2" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="text3" class="col-3 col-form-label">Nama Ibu Kandung</label> 
+      <div class="col-5">
+        <input id="text3" name="text3" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-3 col-form-label" for="select">Pekerjaan</label> 
+        <div class="col-5">
+          <select id="select" name="select" class="custom-select">
+            <option value="Job">Karyawan Swasta</option>
+            <option value="Job">PNS</option>
+            <option value="Job">Buruh Harian</option>
+            <option value="Job">Tidak Bekerja</option>
+          </select>
+        </div>
+      </div> 
+    <div class="form-group row">
+      <label for="text7" class="col-3 col-form-label">No. Telepon</label> 
+      <div class="col-5">
+        <input id="text7" name="text7" type="number" class="form-control">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="textarea1" class="col-3 col-form-label">Alamat Lengkap</label> 
+      <div class="col-5">
+        <textarea id="textarea1" name="textarea1" cols="40" rows="5" class="form-control"></textarea>
+      </div>
+    </div> 
+    <div class="form-group row">
+      <div class="offset-3 col-5">
+        <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+    </fieldset>
+  </form>
+  <div class="footer">
+    <hr>
+    <div class="gambar">
+        <img src="image/logopesantern-removebg-preview.png" alt="">
+        <br>
+        <div class="text">
+            <b> Jl. Kamboja, Kec. Pasar Rebo, Kel. Cijantung, Prov DKI Jakarta, 13770 </b>
+            <p>Email  : pondokpesantrenanabul@gmail.com | No.Tlp :(021) 378895/ 0895406229485</p>
+            <p>&copy; 2023 Pondok Pesantren Anabul. All rights reserved.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
